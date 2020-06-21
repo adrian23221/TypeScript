@@ -33,17 +33,13 @@ let testFnc = (message) => console.log(message);
 
 //  Custom Types
 
-interface Point {
-    x: number,
+class Point {
+    x: number;
     y: number
+    draw() {
+        //...
+    }
+    getDistance(another: Point) {
+        //...
+    }
 }
-
-let theList = (point: Point) => {
-    //
-}
-
-theList({
-    x: 1,
-    y: 2
-})
-
