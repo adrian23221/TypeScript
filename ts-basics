@@ -1,0 +1,49 @@
+//  TypeScript 
+
+let b: number = 5;
+let c: string;
+let d: boolean;
+let e: any;
+let array: number[] = [1, 2, 3]
+let anyArray: any[] = [1, 'test', true];
+
+//  Enum
+
+const colorRed = 'red';
+const colorBlue = 'blue';
+const colorYellow = 'yellow';
+
+enum color { Red = 0, Blue, Yellow };
+
+var backgroundColor = color.Blue;
+
+//  Intelisense
+
+let message;
+message = 'abc';
+let messageEnd = (<string>message).endsWith('c');
+let alternativeWay = (message as string).endsWith('c');
+
+console.log(messageEnd);
+console.log(alternativeWay)
+
+//  Arrow Function
+
+let testFnc = (message) => console.log(message);
+
+//  Custom Types
+
+interface Point {
+    x: number,
+    y: number
+}
+
+let theList = (point: Point) => {
+    //
+}
+
+theList({
+    x: 1,
+    y: 2
+})
+
